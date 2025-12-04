@@ -261,7 +261,6 @@ img {
     box-shadow: var(--shadow);
     cursor: pointer;
     transition: var(--transition);
-    opacity: 1;
 }
 
 .gallery-item:hover {

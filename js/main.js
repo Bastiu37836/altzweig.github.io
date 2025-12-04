@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Observe gallery items for animation
     const galleryItems = document.querySelectorAll('.gallery-item');
-    galleryItems.forEach((item, index) => {
+    galleryItems.forEach((item) => {
         observer.observe(item);
     });
 });

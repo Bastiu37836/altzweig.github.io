@@ -11,57 +11,78 @@
 </head>
 <body>
 <header>
-<h1>Mein Beispiel-Portfolio</h1>
-<nav>
-<ul>
-<li><a href="#intro">Willkommen in meinem Portfolio!</a></li>
-<li><a href="#projekte">Projekte</a></li>
-<li><a href="#kontakt">Kontakt</a></li>
-</ul>
-</nav>
+    <h1>Mein Beispiel-Portfolio</h1>
+    <nav>
+    <ul>
+        <li><a href="#intro">Willkommen in meinem Portfolio!</a></li>
+        <li><a href="#projekte">Projekte</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    </nav>
 </header>
 
 
 <main>
 <section id="intro" class="block">
-<h2>Intro</h2>
-<p>Herzlich willkommen auf meiner Portfolio-Website! Hier finden Sie eine Übersicht meiner Projekte und wie Sie mich kontaktieren können.</p>
+    <h2>Intro</h2>
+    <p>Herzlich willkommen auf meiner Portfolio-Website! Hier finden Sie eine Übersicht meiner Projekte und wie Sie mich kontaktieren können.</p>
 </section>
-
 
 <section id="projekte" class="block">
-<h2>Projekte</h2>
-<div class="card">Masterprojekt: Entwicklung eines nutzerfreundlichen Werkzeugs zur 3D-Visualisierung keramischer Glasurproben</div>
-<div class="card">Game-Projekt: Sea of Scraps </div>
-<div class="card">3D-Renderings</div>
+    <h2>Projekte</h2>
+    <div class="card">Masterprojekt: Entwicklung eines nutzerfreundlichen Werkzeugs zur 3D-Visualisierung keramischer Glasurproben
+        <section id="viewer3d" class="block">
+            <h2>3D Modell: Insektoid</h2>
+            <model-viewer
+                src="resources/insektoid.glb"
+                alt="3D Modell Insektoid"
+                auto-rotate
+                camera-controls
+                environment-image="neutral"
+                style="width: 100%; max-width: 1000px; height: 700px; margin: 0 auto;">
+            </model-viewer>
+        </section>
+    </div>
+
+    <div class="card">Game-Projekt: Sea of Scraps 
+        <section id="viewer3d" class="block">
+            <h2>3D Modell: Insektoid</h2>
+            <model-viewer
+                src="resources/mgwithscope.glb"
+                alt="Sea of Scraps - Primärwaffe"
+                auto-rotate
+                camera-controls
+                environment-image="neutral"
+                style="width: 100%; max-width: 1000px; height: 700px; margin: 0 auto;">
+            </model-viewer>
+        </section>  
+    </div>
+
+    <div class="card">3D-Renderings
+        <section id="viewer3d" class="block">
+            <h2>3D Modell: Insektoid</h2>
+            <model-viewer
+                src="resources/islandwithhouse.glb"
+                alt="Übungsprojekt 'LowPoly-House'"
+                auto-rotate
+                camera-controls
+                environment-image="neutral"
+                style="width: 100%; max-width: 1000px; height: 700px; margin: 0 auto;">
+            </model-viewer>
+        </section>
+    </div>
 </section>
-
-
-<section id="viewer3d" class="block">
-    <h2>3D Modell: Insektoid</h2>
-    <model-viewer
-        src="resources/insektoid.glb"
-        alt="3D Modell Insektoid"
-        auto-rotate
-        camera-controls
-        environment-image="neutral"
-        style="width: 100%; max-width: 1000px; height: 700px; margin: 0 auto;">
-    </model-viewer>
-</section>
-
 
 <section id="kontakt" class="block">
-<h2>Kontakt</h2>
-<p>Dieser Abschnitt enthält später deine Kontaktinformationen.</p>
-<button id="actionBtn">Interaktion testen</button>
+    <h2>Kontakt</h2>
+    <p>Dieser Abschnitt enthält später deine Kontaktinformationen.</p>
+    <button id="actionBtn">Interaktion testen</button>
 </section>
 </main>
 
-
 <footer class="footer">
-<p>© 2025 – Dein Name</p>
+    <p>© 2025 – Dein Name</p>   
 </footer>
-
 
 <script src="script.js"></script>
 </body>
